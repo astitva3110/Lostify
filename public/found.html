@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lostify-Found</title>
+    <link rel="stylesheet" href="css/found.css">
+</head>
+<body>
+    <div class="main">
+
+<h3>FOUND Form</h3>
+
+<div class="container">
+  <form action="/found" method="post" enctype="multipart/form-data">
+    <label for="name"> Name</label>
+    <input type="text" id="fname" name="name" placeholder="Your name..">
+
+    <label for="email">E-mail</label>
+    <input type="email" id="lname" name="email" placeholder="yourname@akgec.ac.in">
+
+    <label for="country">Type Of Product</label>
+    <select id="option" name="option">
+      <option value="Bottle">Bottle/Pencile-box</option>
+      <option value="Stationary">Stationary</option>
+      <option value="Mobile">Mobile/Laptop</option>
+      <option value="Earpods">Earpods</option>
+      <option value="Electronics">Electronics</option>
+      <option value="other">other</option>
+    </select>
+   <div> <label for="addimg">Add image</label>
+    <input type="file"  accept ="image/*"name="addimg" placeholder="add image of lost item">
+</div>
+    <label for="about">About item</label>
+    <textarea id="subject" name="about" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" onclick="myfunction()">
+  </form>
+</div>
+</div>
+<script>
+    function myfunction() {
+      alert("Success your data is added");
+    }
+    </script>
+</body>
+</html>
